@@ -1,5 +1,5 @@
 :root {
-    --light-grey: #eeeae7;
+    --light-grey: #f7f7f7;
     --dark-grey: #746c66;
     --light-green: #9bbe53;
     --dark-green: #596e2d;
@@ -20,7 +20,6 @@ body {
     color: var(--dark-grey);
 }
 
-
 section {
     max-width: 1180px;
     height: auto;
@@ -32,6 +31,14 @@ img {
     min-height: 50px;
     min-width: 50px;
     border: black 1px solid;
+}
+
+.light-grey-wrapper {
+    background: var(--light-grey);
+}
+
+.margin-bottom {
+    margin-bottom: 1rem;
 }
 
 /*------HEADER------*/
@@ -84,6 +91,25 @@ h1 {
     color: var(--light-green);
 }
 
+/*------HERO------*/
+
+#hero {
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#hero img {
+    height: 100%;
+    width: 40%;
+}
+
+#hero .content {
+    width: 50%;
+    text-align: center;
+}
 
 
 
@@ -95,12 +121,16 @@ h1 {
 
 
 /*------Mobile------*/
-@media screen and (max-width: 750px) {
-    /*------DOCUMENT------*/
+@media screen and (max-width: 750px),
+screen and (max-height: 400px) {
 
+    /*------DOCUMENT------*/
 section {
-    max-width: 880px;
     padding: 0 1rem;
+}
+
+.hide-on-small {
+    display: none;
 }
     /*------HEADER------*/
 
@@ -124,6 +154,28 @@ section {
 h1 {
     font-weight: 300;
     font-size: 1.5rem;
+}
+
+/*------HERO------*/
+
+#hero {
+    height: 89vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#hero img {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#hero .content {
+    height: auto;
+    width: 90%;
+    text-align: center;
 }
 
 
