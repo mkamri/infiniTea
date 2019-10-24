@@ -1,0 +1,131 @@
+:root {
+    --light-grey: #eeeae7;
+    --dark-grey: #746c66;
+    --light-green: #9bbe53;
+    --dark-green: #596e2d;
+}
+
+/*------DOCUMENT------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--dark-grey);
+}
+
+
+section {
+    max-width: 1180px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+img {
+    min-height: 50px;
+    min-width: 50px;
+    border: black 1px solid;
+}
+
+/*------HEADER------*/
+
+#header {
+    padding: .5rem 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--dark-grey);
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+}
+
+.branding {
+    width: 11rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.branding img {
+    min-height: 35px;
+    min-width: 35px;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+#nav-bar ul {
+    padding-top: .7rem;
+}
+
+#nav-bar li {
+    display: inline;
+}
+
+#nav-bar li a:link,
+#nav-bar li a:visited {
+    text-decoration: none;
+    padding: 0 .5rem;
+    color: var(--dark-grey);
+}
+
+#nav-bar li a:hover,
+#nav-bar li a:active {
+    color: var(--light-green);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*------Mobile------*/
+@media screen and (max-width: 750px) {
+    /*------DOCUMENT------*/
+
+section {
+    max-width: 880px;
+    padding: 0 1rem;
+}
+    /*------HEADER------*/
+
+#header {
+    padding: .5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-items: space-around;
+    position: relative;
+    text-align: center;
+}
+
+.branding {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+
+}
