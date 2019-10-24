@@ -48,10 +48,9 @@ img {
 }
 
 .branding {
-    width: 11rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
