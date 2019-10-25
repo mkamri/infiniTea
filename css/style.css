@@ -79,11 +79,12 @@ hr {
 }
 
 .branding img {
-    height: 35px;
-    width: 35px;
+    height: 25px;
+    width: 25px;
 }
 
 h1 {
+    margin-left: 1rem;
     font-weight: 300;
     font-size: 1.5rem;
 }
@@ -214,6 +215,7 @@ h1 {
     font-size: 1rem;
     color: #ffffff;
     box-shadow: 0 3px 5px var(--dark-grey);
+    transition: .5s;
 }
 
 .subscribe-grid-box button:hover {
