@@ -57,7 +57,7 @@ hr {
     width: 24rem;
     margin-left: -15rem;
     margin-bottom: 2.5rem;
-    border-top: 2px dotted var(--dark-grey);
+    border-top: 1px solid var(--light-green);
 }
 
 /*------HEADER------*/
@@ -134,7 +134,7 @@ h1 {
 /*------ABOUT------*/
 
 #about h2 {
-    margin-left: 2rem;
+    margin-left: 3rem;
 }
 
 #about img {
@@ -178,6 +178,7 @@ h1 {
 /*-------SUBSCRIBE------*/
 
 #subscribe {
+    margin-bottom: 0;
     padding: 3rem 6rem;
 }
 
@@ -217,7 +218,16 @@ h1 {
     background: var(--dark-green);
 }
 
+/*------FOOTER-----*/
 
+#footer {
+    height: auto;
+    margin: 0 auto;
+    padding: .5rem 3rem;
+    background: var(--dark-grey);
+    color: #ffffff;
+    text-align: center;
+}
 
 
 
@@ -227,7 +237,7 @@ h1 {
 
 
 /*------MOBILE------*/
-@media screen and (max-width: 750px),
+@media screen and (max-width: 650px),
 screen and (max-height: 400px) {
 
     /*------DOCUMENT------*/
