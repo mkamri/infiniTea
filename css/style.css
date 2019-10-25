@@ -79,8 +79,8 @@ hr {
 }
 
 .branding img {
-    min-height: 35px;
-    min-width: 35px;
+    height: 35px;
+    width: 35px;
 }
 
 h1 {
@@ -99,13 +99,17 @@ h1 {
 #nav-bar li a:link,
 #nav-bar li a:visited {
     text-decoration: none;
-    padding: 0 .5rem;
+    padding-bottom: .1rem;
+    margin: 0 .7rem;
     color: var(--dark-grey);
+    transition: 1s;
+    border-bottom: #ffffff 3px solid;
 }
 
 #nav-bar li a:hover,
 #nav-bar li a:active {
     color: var(--light-green);
+    border-bottom: 3px var(--light-green) solid;
 }
 
 /*------HERO------*/
