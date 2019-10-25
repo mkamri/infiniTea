@@ -164,6 +164,7 @@ h1 {
 .our-process-content video {
     width: 50%;
     height: auto;
+    z-index: -1;
 }
 
 .our-process-content-text h3 {
@@ -174,6 +175,47 @@ h1 {
     width: 45%;
 }
 
+/*-------SUBSCRIBE------*/
+
+#subscribe {
+    padding: 3rem 6rem;
+}
+
+#subscribe h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.subscribe-grid-box {
+    border: var(--dark-grey) 1px solid;
+    height: 15rem;
+    max-width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0 2rem 0;
+}
+
+.subscribe-grid-box h3 {
+    font-size: 1.5rem;
+}
+
+.subscribe-grid-box button {
+    width: 6rem;
+    height: 2.5rem;
+    border: none;
+    background-color: var(--light-green);
+    font-size: 1rem;
+    color: #ffffff;
+    box-shadow: 0 3px 5px var(--dark-grey);
+}
+
+.subscribe-grid-box button:hover {
+    background: var(--dark-green);
+}
 
 
 
@@ -181,7 +223,10 @@ h1 {
 
 
 
-/*------Mobile------*/
+
+
+
+/*------MOBILE------*/
 @media screen and (max-width: 750px),
 screen and (max-height: 400px) {
 
@@ -284,6 +329,45 @@ h1 {
 .our-process-content-text {
     width: 95%;
     margin-bottom: 3rem;
+}
+
+/*-------SUBSCRIBE------*/
+
+#subscribe {
+    padding: 3rem 1rem;
+}
+
+.subscribe-grid {
+    justify-items: center;
+}
+
+.subscribe-grid-box {
+    border: var(--dark-grey) 1px solid;
+    height: 13rem;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0 2rem 0;
+}
+
+.subscribe-grid-box h3 {
+    font-size: 1.5rem;
+}
+
+.subscribe-grid-box button {
+    width: 6rem;
+    height: 2.5rem;
+    border: none;
+    background-color: var(--light-green);
+    font-size: 1rem;
+    color: #ffffff;
+    box-shadow: 0 3px 5px var(--dark-grey);
+}
+
+.subscribe-grid-box button:hover {
+    background: var(--dark-green);
 }
 
 
