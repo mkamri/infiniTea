@@ -24,8 +24,8 @@ section {
     max-width: 1180px;
     height: auto;
     margin: 0 auto;
-    padding: 0 3rem;
-    margin-bottom: 8rem;
+    padding: 4rem 3rem 0 3rem;
+    margin-top: 4rem;
 }
 
 h2 {
@@ -116,12 +116,12 @@ h1 {
 /*------HERO------*/
 
 #hero {
+    margin-top: 0;
     height: 60vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    margin-bottom: 2rem;
 }
 
 #hero img {
@@ -237,10 +237,9 @@ h1 {
 
 
 
-/*------TABLET: change three column grid to be normal for tablet, everything else the same as mobile------*/
 
 
-/*------MOBILE------*/
+/*------TABLET AND MOBILE------*/
 @media screen and (max-width: 750px),
 screen and (max-height: 400px) {
 
@@ -251,14 +250,6 @@ section {
 
 .hide-on-small {
     display: none;
-}
-
-.three-column-grid {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr 1fr 1fr;
-    text-align: center;
-    row-gap: 3rem;
 }
     /*------HEADER------*/
 
@@ -295,7 +286,7 @@ h1 {
 }
 
 #hero img {
-    height: 100%;
+    height: 80%;
     width: 100%;
     margin-bottom: 1rem;
 }
@@ -358,7 +349,7 @@ h1 {
 .subscribe-grid-box {
     border: var(--dark-grey) 1px solid;
     height: 13rem;
-    width: 15rem;
+    min-width: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -366,23 +357,21 @@ h1 {
     padding: 1rem 0 2rem 0;
 }
 
-.subscribe-grid-box h3 {
-    font-size: 1.5rem;
+
 }
 
-.subscribe-grid-box button {
-    width: 6rem;
-    height: 2.5rem;
-    border: none;
-    background-color: var(--light-green);
-    font-size: 1rem;
-    color: #ffffff;
-    box-shadow: 0 3px 5px var(--dark-grey);
-}
 
-.subscribe-grid-box button:hover {
-    background: var(--dark-green);
-}
 
+/*------MOBILE ONLY------*/
+@media screen and (max-width: 600px),
+screen and (max-height: 400px) {
+
+.three-column-grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    text-align: center;
+    row-gap: 3rem;
+}
 
 }
